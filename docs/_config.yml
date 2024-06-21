@@ -3,7 +3,8 @@ title: Radiologie Helfer
 description: A website with a hacker-style background
 
 # Theme settings
-theme: jekyll-theme-hacker@v0.2.0
+theme: jekyll-theme-hacker
+
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
