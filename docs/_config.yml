@@ -11,6 +11,7 @@ plugins:
 
 # URL settings
 url: "https://sadritmora.github.io"
+baseurl: ""
 
 # Author settings
 author:
