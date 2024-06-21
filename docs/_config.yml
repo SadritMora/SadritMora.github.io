@@ -1,5 +1,9 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: default theme...
+email: email@example.com
+description: ...description...
+url: "https://sadritmora.github.io/"
+
+# Build settings
 theme: jekyll-theme-hacker
+
+remote_theme: pages-themes/hacker@v0.2.0
