@@ -1,4 +1,4 @@
 title: My GitHub Page
 description: A website with a hacker-style background
-theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
 
