@@ -9,11 +9,10 @@
       background-color: #000; /* Black background */
       color: #00FF00; /* Green text */
       font-family: 'Calibri', sans-serif; /* Calibri font */
-      padding: 0;
+      margin: 0; /* Reset margin */
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0; /* Reset margin */
     }
 
     .header-image {
@@ -29,25 +28,26 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      max-width: calc(100% - 8cm); /* Max width for content with 4 cm margin on each side */
+      max-width: 1200px; /* Max width for content */
+      padding: 0 4cm; /* 4 cm margin on each side */
       margin: 0 auto; /* Center the container */
     }
 
     .subchapter {
       flex: 0 1 30%; /* Set the width for three columns */
       text-align: left; /* Align subchapters and links to the left */
-      margin: 10px; /* Space between subchapters */
+      margin: 20px; /* Space between subchapters */
     }
 
     h2 {
-      font-size: 24pt; /* Larger subchapter size, equivalent to Calibri 20 in Word */
+      font-size: 48pt; /* Larger subchapter size, double the previous size */
       color: #00FF00; /* Initial green color */
     }
 
     ul {
       list-style-type: none;
       padding: 0;
-      font-size: 20pt; /* Font size similar to Calibri 20 in Word */
+      font-size: 40pt; /* Font size double the previous size */
     }
 
     li {
@@ -74,7 +74,6 @@
 </head>
 <body>
   <div class="header-image"></div> <!-- Background image -->
-
   <div class="container">
     <div class="subchapter">
       <h2>Trauma</h2>
