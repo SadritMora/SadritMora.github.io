@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,32 +7,39 @@
   <style>
     body {
       background-color: #000; /* Black background */
-      color: #00FF00; /* Green text */
+      color: #01796F; /* Darker shade of green */
       font-family: 'Courier New', Courier, monospace; /* Monospaced font for hacker look */
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    h1 {
-      font-size: 6em; /* Very large title size */
-      text-align: center; /* Center align title */
-      margin-bottom: 1em;
+    .header-image {
+      width: 100%;
+      height: 5cm;
+      background-image: url('header-background.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-attachment: fixed; /* Picture remains fixed when scrolling */
+      margin-bottom: 20px;
     }
 
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
+      max-width: 1200px; /* Max width for content */
     }
 
     .subchapter {
       flex: 0 1 30%; /* Set the width for three columns */
       text-align: left; /* Align subchapters and links to the left */
-      margin-bottom: 2em;
+      margin: 10px; /* Space between subchapters */
     }
 
     h2 {
       font-size: 3em; /* Larger subchapter size */
-      color: #00FF00;
+      color: #01796F; /* Darker shade of green */
     }
 
     ul {
@@ -48,7 +55,7 @@
     }
 
     a {
-      color: #00FF00; /* Green text for links */
+      color: #01796F; /* Darker shade of green for links */
       text-decoration: none;
       margin-left: 10px; /* Space between thumbnail and text */
     }
@@ -64,32 +71,19 @@
   </style>
 </head>
 <body>
-  <h1>Radiologie Helfer</h1>
+  <div class="header-image"></div> <!-- Background image -->
 
   <div class="container">
     <div class="subchapter">
-      <h2>Thorax</h2>
+      <h2>Trauma</h2>
       <ul>
-        <li><img class="thumbnail" src="thumbnails/thorax-thumb1.jpg" alt=""><a href="articles/thorax-article1.html">Article 1</a></li>
-        <li><img class="thumbnail" src="thumbnails/thorax-thumb2.jpg" alt=""><a href="articles/thorax-article2.html">Article 2</a></li>
-        <li><img class="thumbnail" src="thumbnails/thorax-thumb3.jpg" alt=""><a href="articles/thorax-article3.html">Article 3</a></li>
-        <li><img class="thumbnail" src="thumbnails/thorax-thumb4.jpg" alt=""><a href="articles/thorax-article4.html">Article 4</a></li>
-        <li><img class="thumbnail" src="thumbnails/thorax-thumb5.jpg" alt=""><a href="articles/thorax-article5.html">Article 5</a></li>
-        <li><img class="thumbnail" src="thumbnails/thorax-thumb6.jpg" alt=""><a href="articles/thorax-article6.html">Article 6</a></li>
-        <li><img class="thumbnail" src="thumbnails/thorax-thumb7.jpg" alt=""><a href="articles/thorax-article7.html">Article 7</a></li>
-      </ul>
-    </div>
-
-    <div class="subchapter">
-      <h2>Abdomen</h2>
-      <ul>
-        <li><img class="thumbnail" src="thumbnails/abdomen-thumb1.jpg" alt=""><a href="articles/abdomen-article1.html">Article 1</a></li>
-        <li><img class="thumbnail" src="thumbnails/abdomen-thumb2.jpg" alt=""><a href="articles/abdomen-article2.html">Article 2</a></li>
-        <li><img class="thumbnail" src="thumbnails/abdomen-thumb3.jpg" alt=""><a href="articles/abdomen-article3.html">Article 3</a></li>
-        <li><img class="thumbnail" src="thumbnails/abdomen-thumb4.jpg" alt=""><a href="articles/abdomen-article4.html">Article 4</a></li>
-        <li><img class="thumbnail" src="thumbnails/abdomen-thumb5.jpg" alt=""><a href="articles/abdomen-article5.html">Article 5</a></li>
-        <li><img class="thumbnail" src="thumbnails/abdomen-thumb6.jpg" alt=""><a href="articles/abdomen-article6.html">Article 6</a></li>
-        <li><img class="thumbnail" src="thumbnails/abdomen-thumb7.jpg" alt=""><a href="articles/abdomen-article7.html">Article 7</a></li>
+        <li><img class="thumbnail" src="thumbnails/trauma-thumb1.jpg" alt=""><a href="articles/trauma-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/trauma-thumb2.jpg" alt=""><a href="articles/trauma-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/trauma-thumb3.jpg" alt=""><a href="articles/trauma-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/trauma-thumb4.jpg" alt=""><a href="articles/trauma-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/trauma-thumb5.jpg" alt=""><a href="articles/trauma-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/trauma-thumb6.jpg" alt=""><a href="articles/trauma-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/trauma-thumb7.jpg" alt=""><a href="articles/trauma-article7.html">Article 7</a></li>
       </ul>
     </div>
 
@@ -107,28 +101,93 @@
     </div>
 
     <div class="subchapter">
-      <h2>Trauma</h2>
+      <h2>Kopf und Hals</h2>
       <ul>
-        <li><img class="thumbnail" src="thumbnails/trauma-thumb1.jpg" alt=""><a href="articles/trauma-article1.html">Article 1</a></li>
-        <li><img class="thumbnail" src="thumbnails/trauma-thumb2.jpg" alt=""><a href="articles/trauma-article2.html">Article 2</a></li>
-        <li><img class="thumbnail" src="thumbnails/trauma-thumb3.jpg" alt=""><a href="articles/trauma-article3.html">Article 3</a></li>
-        <li><img class="thumbnail" src="thumbnails/trauma-thumb4.jpg" alt=""><a href="articles/trauma-article4.html">Article 4</a></li>
-        <li><img class="thumbnail" src="thumbnails/trauma-thumb5.jpg" alt=""><a href="articles/trauma-article5.html">Article 5</a></li>
-        <li><img class="thumbnail" src="thumbnails/trauma-thumb6.jpg" alt=""><a href="articles/trauma-article6.html">Article 6</a></li>
-        <li><img class="thumbnail" src="thumbnails/trauma-thumb7.jpg" alt=""><a href="articles/trauma-article7.html">Article 7</a></li>
+        <li><img class="thumbnail" src="thumbnails/kopf-hals-thumb1.jpg" alt=""><a href="articles/kopf-hals-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/kopf-hals-thumb2.jpg" alt=""><a href="articles/kopf-hals-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/kopf-hals-thumb3.jpg" alt=""><a href="articles/kopf-hals-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/kopf-hals-thumb4.jpg" alt=""><a href="articles/kopf-hals-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/kopf-hals-thumb5.jpg" alt=""><a href="articles/kopf-hals-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/kopf-hals-thumb6.jpg" alt=""><a href="articles/kopf-hals-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/kopf-hals-thumb7.jpg" alt=""><a href="articles/kopf-hals-article7.html">Article 7</a></li>
       </ul>
     </div>
 
     <div class="subchapter">
-      <h2>Gelenke</h2>
+      <h2>Thorax</h2>
       <ul>
-        <li><img class="thumbnail" src="thumbnails/gelenke-thumb1.jpg" alt=""><a href="articles/gelenke-article1.html">Article 1</a></li>
-        <li><img class="thumbnail" src="thumbnails/gelenke-thumb2.jpg" alt=""><a href="articles/gelenke-article2.html">Article 2</a></li>
-        <li><img class="thumbnail" src="thumbnails/gelenke-thumb3.jpg" alt=""><a href="articles/gelenke-article3.html">Article 3</a></li>
-        <li><img class="thumbnail" src="thumbnails/gelenke-thumb4.jpg" alt=""><a href="articles/gelenke-article4.html">Article 4</a></li>
-        <li><img class="thumbnail" src="thumbnails/gelenke-thumb5.jpg" alt=""><a href="articles/gelenke-article5.html">Article 5</a></li>
-        <li><img class="thumbnail" src="thumbnails/gelenke-thumb6.jpg" alt=""><a href="articles/gelenke-article6.html">Article 6</a></li>
-        <li><img class="thumbnail" src="thumbnails/gelenke-thumb7.jpg" alt=""><a href="articles/gelenke-article7.html">Article 7</a></li>
+        <li><img class="thumbnail" src="thumbnails/thorax-thumb1.jpg" alt=""><a href="articles/thorax-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/thorax-thumb2.jpg" alt=""><a href="articles/thorax-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/thorax-thumb3.jpg" alt=""><a href="articles/thorax-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/thorax-thumb4.jpg" alt=""><a href="articles/thorax-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/thorax-thumb5.jpg" alt=""><a href="articles/thorax-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/thorax-thumb6.jpg" alt=""><a href="articles/thorax-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/thorax-thumb7.jpg" alt=""><a href="articles/thorax-article7.html">Article 7</a></li>
+      </ul>
+    </div>
+
+    <div class="subchapter">
+      <h2>Cardiovascular</h2>
+      <ul>
+        <li><img class="thumbnail" src="thumbnails/cardiovascular-thumb1.jpg" alt=""><a href="articles/cardiovascular-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/cardiovascular-thumb2.jpg" alt=""><a href="articles/cardiovascular-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/cardiovascular-thumb3.jpg" alt=""><a href="articles/cardiovascular-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/cardiovascular-thumb4.jpg" alt=""><a href="articles/cardiovascular-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/cardiovascular-thumb5.jpg" alt=""><a href="articles/cardiovascular-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/cardiovascular-thumb6.jpg" alt=""><a href="articles/cardiovascular-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/cardiovascular-thumb7.jpg" alt=""><a href="articles/cardiovascular-article7.html">Article 7</a></li>
+      </ul>
+    </div>
+
+    <div class="subchapter">
+      <h2>Mammaradiologie</h2>
+      <ul>
+        <li><img class="thumbnail" src="thumbnails/mammaradiologie-thumb1.jpg" alt=""><a href="articles/mammaradiologie-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/mammaradiologie-thumb2.jpg" alt=""><a href="articles/mammaradiologie-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/mammaradiologie-thumb3.jpg" alt=""><a href="articles/mammaradiologie-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/mammaradiologie-thumb4.jpg" alt=""><a href="articles/mammaradiologie-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/mammaradiologie-thumb5.jpg" alt=""><a href="articles/mammaradiologie-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/mammaradiologie-thumb6.jpg" alt=""><a href="articles/mammaradiologie-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/mammaradiologie-thumb7.jpg" alt=""><a href="articles/mammaradiologie-article7.html">Article 7</a></li>
+      </ul>
+    </div>
+
+    <div class="subchapter">
+      <h2>Abdomen</h2>
+      <ul>
+        <li><img class="thumbnail" src="thumbnails/abdomen-thumb1.jpg" alt=""><a href="articles/abdomen-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/abdomen-thumb2.jpg" alt=""><a href="articles/abdomen-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/abdomen-thumb3.jpg" alt=""><a href="articles/abdomen-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/abdomen-thumb4.jpg" alt=""><a href="articles/abdomen-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/abdomen-thumb5.jpg" alt=""><a href="articles/abdomen-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/abdomen-thumb6.jpg" alt=""><a href="articles/abdomen-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/abdomen-thumb7.jpg" alt=""><a href="articles/abdomen-article7.html">Article 7</a></li>
+      </ul>
+    </div>
+
+    <div class="subchapter">
+      <h2>Muskuloskelettal</h2>
+      <ul>
+        <li><img class="thumbnail" src="thumbnails/muskuloskelettal-thumb1.jpg" alt=""><a href="articles/muskuloskelettal-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/muskuloskelettal-thumb2.jpg" alt=""><a href="articles/muskuloskelettal-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/muskuloskelettal-thumb3.jpg" alt=""><a href="articles/muskuloskelettal-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/muskuloskelettal-thumb4.jpg" alt=""><a href="articles/muskuloskelettal-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/muskuloskelettal-thumb5.jpg" alt=""><a href="articles/muskuloskelettal-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/muskuloskelettal-thumb6.jpg" alt=""><a href="articles/muskuloskelettal-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/muskuloskelettal-thumb7.jpg" alt=""><a href="articles/muskuloskelettal-article7.html">Article 7</a></li>
+      </ul>
+    </div>
+
+    <div class="subchapter">
+      <h2>Kinderradiologie</h2>
+      <ul>
+        <li><img class="thumbnail" src="thumbnails/kinderradiologie-thumb1.jpg" alt=""><a href="articles/kinderradiologie-article1.html">Article 1</a></li>
+        <li><img class="thumbnail" src="thumbnails/kinderradiologie-thumb2.jpg" alt=""><a href="articles/kinderradiologie-article2.html">Article 2</a></li>
+        <li><img class="thumbnail" src="thumbnails/kinderradiologie-thumb3.jpg" alt=""><a href="articles/kinderradiologie-article3.html">Article 3</a></li>
+        <li><img class="thumbnail" src="thumbnails/kinderradiologie-thumb4.jpg" alt=""><a href="articles/kinderradiologie-article4.html">Article 4</a></li>
+        <li><img class="thumbnail" src="thumbnails/kinderradiologie-thumb5.jpg" alt=""><a href="articles/kinderradiologie-article5.html">Article 5</a></li>
+        <li><img class="thumbnail" src="thumbnails/kinderradiologie-thumb6.jpg" alt=""><a href="articles/kinderradiologie-article6.html">Article 6</a></li>
+        <li><img class="thumbnail" src="thumbnails/kinderradiologie-thumb7.jpg" alt=""><a href="articles/kinderradiologie-article7.html">Article 7</a></li>
       </ul>
     </div>
   </div>
