@@ -27,14 +27,13 @@
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      max-width: 1200px; /* Max width for content */
-      padding: 0 4cm; /* Equal padding on both sides */
+      justify-content: center; /* Center the subchapters */
+      max-width: calc(100% - 8cm); /* Max width for content with 4 cm margin on each side */
       margin: 0 auto; /* Center the container */
     }
 
     .subchapter {
-      flex: 0 1 30%; /* Set the width for three columns */
+      flex: 0 1 calc(33.33% - 40px); /* Set the width for three columns, accounting for margins */
       text-align: left; /* Align subchapters and links to the left */
       margin: 20px; /* Space between subchapters */
     }
@@ -74,7 +73,6 @@
 </head>
 <body>
   <div class="header-image"></div> <!-- Background image -->
-
 
 
   <div class="container">
