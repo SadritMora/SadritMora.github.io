@@ -27,14 +27,13 @@
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      max-width: 1200px; /* Max width for content */
-      padding: 0 4cm; /* 4 cm margin on each side */
+      justify-content: space-between;
+      max-width: calc(100% - 8cm); /* Max width for content with 4 cm margin on each side */
       margin: 0 auto; /* Center the container */
     }
 
     .subchapter {
-      flex: 0 1 calc(33.33% - 40px); /* Set the width for three columns, including margin */
+      flex: 0 1 calc(33.33% - 40px); /* Set the width for three columns, accounting for margins */
       text-align: left; /* Align subchapters and links to the left */
       margin: 20px; /* Space between subchapters */
     }
@@ -64,6 +63,12 @@
 
     a:hover {
       color: #FF0000; /* Red text on hover */
+    }
+
+    a[target="_blank"]::after {
+      content: " (opens in new tab)";
+      font-size: 0.5em;
+      color: #999;
     }
 
     img.thumbnail {
