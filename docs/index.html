@@ -10,14 +10,13 @@
       color: #00FF00; /* Green text */
       font-family: 'Calibri', sans-serif; /* Calibri font */
       margin: 0; /* Reset margin */
-      padding-left: 5cm; /* Add left padding for 5 cm margin */
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     .header-image {
-      width: calc(100% - 5cm); /* Adjust width to account for left padding */
+      width: 100%;
       height: 5cm;
       background-image: url('header-background.jpg'); /* Replace with your image path */
       background-size: cover;
@@ -29,8 +28,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center; /* Center the subchapters */
-      max-width: calc(100% - 10cm); /* Max width for content with 5 cm margin on each side */
+      max-width: calc(100% - 14cm); /* Max width for content with 7 cm margin on each side */
       margin: 0 auto; /* Center the container */
+      padding-left: 7cm; /* Increase the left padding */
     }
 
     .subchapter {
@@ -74,7 +74,6 @@
 </head>
 <body>
   <div class="header-image"></div> <!-- Background image -->
-
 
   <div class="container">
     <div class="subchapter">
