@@ -28,14 +28,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center; /* Center the subchapters */
-      max-width: calc(100% - 18cm); /* Max width for content with 9 cm margin on each side */
+      max-width: calc(100% - 20cm); /* Max width for content with 10 cm margin on each side */
       margin: 0 auto; /* Center the container */
-      padding-left: 9cm; /* Increase the left padding */
+      padding-left: 10cm; /* Increase the left padding */
     }
 
     .subchapter {
       flex: 0 1 calc(33.33% - 40px); /* Set the width for three columns, accounting for margins */
-      text-align: left; /* Align subchapters and links to the left */
+      text-align: center; /* Center align subchapters */
       margin: 20px; /* Space between subchapters */
     }
 
@@ -48,12 +48,15 @@
       list-style-type: none;
       padding: 0;
       font-size: 40pt; /* Font size double the previous size */
+      text-align: center; /* Center align list items */
+      padding-left: 0;
     }
 
     li {
       margin: 10px 0;
       display: flex;
       align-items: center;
+      justify-content: center; /* Center align links */
     }
 
     a {
@@ -74,6 +77,7 @@
 </head>
 <body>
   <div class="header-image"></div> <!-- Background image -->
+
 
   <div class="container">
     <div class="subchapter">
