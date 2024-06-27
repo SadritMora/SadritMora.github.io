@@ -38,6 +38,17 @@
       border: none;
       margin: 20px 0;
     }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+    .box {
+      border: 2px solid #00FF00;
+      padding: 20px;
+      width: 48%;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
@@ -74,6 +85,8 @@
     </ul>
     <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://www.researchgate.net/publication/369357168/figure/fig1/AS:11431281133302054@1680278717177/Pathophysiology-of-D-dimer-formation-TXA-Tranexamic-acid.ppm">
 
+   <div class="container">
+    <div class="box">
     <p>Erhöhte D-Dimere bei:</p>
     <ul>
         <li>Phlebothrombose</li>
@@ -96,10 +109,10 @@
         <li>Positiver Test erfordert weitere Diagnostik</li>
         <li>Altersadaptierter Cut-off: Alter * 10 µg/l</li>
     </ul>
-
-    <br>
-
-    
+    </div>
+     
+    <div class="box">
+  
     <p>D-Dimere sind zum Ausschluss von Thrombosen bzw. Lungenembolien NICHT oder nur eingeschränkt geeignet bei:</p>
     <ul>
         <li>Bestehender Antikoagulation</li>
@@ -110,7 +123,8 @@
         <li>Schwangerschaft</li>
         <li>Erhöhtem CRP (ab einem CRP von 6,5 mg/dl sind die D-Dimere fast immer positiv!)</li>
     </ul>
-
+     </div>
+   </div>
   
   
 
