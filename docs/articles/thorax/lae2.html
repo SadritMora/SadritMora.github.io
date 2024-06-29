@@ -10,7 +10,7 @@
       color: #00FF00; /* Green text */
       font-family: 'Courier New', Courier, monospace; /* Monospaced font for hacker look */
       margin: 20px;
-      font-size: 36 px;
+      font-size: 36px; /* Set root font size */
     }
     h1 {
       color: #00FF00; /* Green color for the title */
@@ -24,8 +24,13 @@
     p, ul {
       font-size: 3em; /* Larger font size for better readability */
     }
+    a {
+      color: blue; /* Blue color for links */
+      text-decoration: underline; /* Underline links */
+      font-size: 3em; /* Match font size of <p> elements */
+    }
     img {
-      width: 60%; /* Ensure the image takes up 80% of the width */
+      width: 60%; /* Ensure the image takes up 60% of the width */
       height: auto; /* Maintain aspect ratio */
       display: block;
       margin: 20px auto; /* Center the image with margins */
@@ -41,27 +46,23 @@
       width: 48%;
       box-sizing: border-box;
     }
-    
     .box-second {
       border: 2px solid #00FF00;
       padding: 20px;
       width: 48%;
       box-sizing: border-box;
-        ul li {
-        margin-bottom: 20px; /* Adjust the spacing as needed */
+    }
+    ul li {
+      margin-bottom: 20px; /* Adjust the spacing as needed */
+    }
     
-   a {
-      color: blue; /* Blue color for links */
-      text-decoration: underline; /* Underline links */
-      font-size: 3em; /* Match font size of <p> elements */  
-  
   </style>
 </head>
 <body>
 
   <h1>LAE, D-DIMER</h1>
 
-  <h2>WELSS SCORE: klinisches Assessment zur Abschätzung der Wahrscheinlichkeit des Vorliegens einer Lungenembolie</h2>
+  <h2>WELLS SCORE: klinisches Assessment zur Abschätzung der Wahrscheinlichkeit des Vorliegens einer Lungenembolie</h2>
   <a href="https://flexikon.doccheck.com/de/Wells-Score">Wells-Score Doccheck Flexicon</a> 
   <br>
   <br>
@@ -128,9 +129,7 @@
   <br>
   <h2 class="centered-h2">DIE AKTUELISIERTE S2K-LEITLINIE DIAGNOSTIK UND THERAPIE DER VENENTHROMBOSE UND LUNGENEMBOLIE</h2>
   
-  
   <a href="https://register.awmf.org/assets/guidelines/065-002k_S2k_Venenthrombose-Lungenembolie_2023-08.pdf" target="_blank">S2k-Leitlinie Diagnostik und Therapie der Venenthrombose und Lungenembolie</a>
-  
   
 </body>
 </html>
