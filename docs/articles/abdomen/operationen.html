@@ -38,10 +38,9 @@
             box-sizing: border-box;
         }
         .image-content img {
-            width: 400px; /* Set a fixed width for the images */
-            height: 300px; /* Set a fixed height for the images */
+             max-width: 100%; /* Ensure images do not exceed the width of their container */
+            height: auto; /* Maintain original aspect ratio */
             display: block;
-            object-fit: cover; /* Ensure the image covers the fixed dimensions */
         }
         h1, h2, h3 {
             text-align: center; /* Center the main title and subtitle */
