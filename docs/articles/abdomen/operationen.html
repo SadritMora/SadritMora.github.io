@@ -38,11 +38,10 @@
             box-sizing: border-box;
         }
         .image-content img {
-            max-width: 100%;
-            height: auto;
-            max-width: 800px; /* Set a max width for the images */
-            max-height: 700px; /* Set a max height for the images */
+            width: 400px; /* Set a fixed width for the images */
+            height: 300px; /* Set a fixed height for the images */
             display: block;
+            object-fit: cover; /* Ensure the image covers the fixed dimensions */
         }
         h1, h2, h3 {
             text-align: center; /* Center the main title and subtitle */
