@@ -37,19 +37,38 @@
       display: block;
       margin: 20px auto; /* Center the iframe with margins */
     }
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: #00FF00;
+      font-size: 2em;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <h1>Neurologische Untersuchung und Symptome</h1>
   
-  <h2>Neurologische Untersuchung</h2>
+  <nav>
+    <a href="#neurologische-untersuchung">Untersuchung</a>
+    <a href="#hirnnerven">Hirnnerven</a>
+    <a href="#neurologische-symptome">Symptome</a>
+  </nav>
+  
+  <h2 id="neurologische-untersuchung">Neurologische Untersuchung</h2>
   <iframe src="https://docs.google.com/viewer?url=https://berichteguru.com/wp-content/uploads/2024/02/NIHSS.pdf&embedded=true"></iframe>
   
-  <h2>Hirnnerven</h2>
+  <h2 id="hirnnerven">Hirnnerven</h2>
   <img src="https://med4life.ch/wp-content/uploads/2022/03/image0.gif" alt="Hirnnerven">
   
-  <h2>Neurologische Symptome</h2>
+  <h2 id="neurologische-symptome">Neurologische Symptome</h2>
   <p>More content goes here...</p>
   
   <img src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-662-61415-0_4/MediaObjects/479382_1_De_4_Fig2_HTML.png" alt="Neurologische Symptome">
