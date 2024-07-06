@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neuroligsche Untersuchung und Symptome</title>
+  <title>Neurologische Untersuchung und Symptome</title>
   <style>
     body {
       background-color: #000; /* Black background */
@@ -14,7 +14,7 @@
     h1 {
       color: #00FF00; /* Green color for the title */
       text-align: center;
-      font-size: 4em
+      font-size: 4em;
     }
     h2 {
       color: #00FF00; /* Green color for the subtitles */
@@ -24,13 +24,14 @@
       font-size: 3em; /* Larger font size for better readability */
     }
     img {
-      width: 60%; /* Ensure the image takes up 80% of the width */
+      width: 60%; /* Ensure the image takes up 60% of the width */
       height: auto; /* Maintain aspect ratio */
       display: block;
       margin: 20px auto; /* Center the image with margins */
     }
-    iframe {
+    #pdf-container {
       width: 100%;
+      height: 100vh; /* Full viewport height */
       border: none;
       margin: 20px 0;
     }
@@ -38,34 +39,57 @@
 </head>
 <body>
 
-  <h1>Neuroligsche Untersuchung und Symptome</h1>
+  <h1>Neurologische Untersuchung und Symptome</h1>
   
   <h2>Neurologische Untersuchung</h2>
-  <p>more content goes here...</p>
-  <iframe id="pdfFrame" src="https://berichteguru.com/wp-content/uploads/2024/02/NIHSS.pdf?fbclid=IwZXh0bgNhZW0CMTAAAR2vocaxbUzCqtqZsmI1eKB97BgyFO9q7FKJO8sXntzlArLG6uHH9B3Ju-U_aem_NCPG2Gyn7GNcjfqhSiJ7Aw"></iframe> 
+  <div id="pdf-container"></div>
   
-   <h2>Hirnnerven</h2>
-   <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://med4life.ch/wp-content/uploads/2022/03/image0.gif">
-   
-
-   <h2>Neurologische Symptome </h2>
-   <p>More content goes here...</p>
-   
-   <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-662-61415-0_4/MediaObjects/479382_1_De_4_Fig2_HTML.png">
+  <h2>Hirnnerven</h2>
+  <img src="https://med4life.ch/wp-content/uploads/2022/03/image0.gif" alt="Hirnnerven">
   
-   <p>More content goes here...</p>
+  <h2>Neurologische Symptome</h2>
+  <p>More content goes here...</p>
+  
+  <img src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-662-61415-0_4/MediaObjects/479382_1_De_4_Fig2_HTML.png" alt="Neurologische Symptome">
+  
+  <p>More content goes here...</p>
 
-    <script>
-    // Adjust the iframe height to fit the PDF content
-    function adjustIframeHeight() {
-      var iframe = document.getElementById('pdfFrame');
-      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-    }
+  <!-- Include PDF.js Library -->
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script>
+    const pdfUrl = 'https://berichteguru.com/wp-content/uploads/2024/02/NIHSS.pdf?fbclid=IwZXh0bgNhZW0CMTAAAR2vocaxbUzCqtqZsmI1eKB97BgyFO9q7FKJO8sXntzlArLG6uHH9B3Ju-U_aem_NCPG2Gyn7GNcjfqhSiJ7Aw';
 
-    // Event listener to adjust height once the content is loaded
-    document.getElementById('pdfFrame').addEventListener('load', function() {
-      adjustIframeHeight();
+    const pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+    const loadingTask = pdfjsLib.getDocument(pdfUrl);
+    loadingTask.promise.then(pdf => {
+      console.log('PDF loaded');
+
+      const container = document.getElementById('pdf-container');
+      
+      for (let i = 1; i <= pdf.numPages; i++) {
+        pdf.getPage(i).then(page => {
+          const scale = 1.5;
+          const viewport = page.getViewport({ scale: scale });
+
+          const canvas = document.createElement('canvas');
+          const context = canvas.getContext('2d');
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+          container.appendChild(canvas);
+
+          const renderContext = {
+            canvasContext: context,
+            viewport: viewport
+          };
+          page.render(renderContext);
+        });
+      }
+    }, reason => {
+      console.error(reason);
     });
   </script>
+
 </body>
 </html>
