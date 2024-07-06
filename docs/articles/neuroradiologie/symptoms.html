@@ -53,10 +53,19 @@
    
    <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-662-61415-0_4/MediaObjects/479382_1_De_4_Fig2_HTML.png">
   
+   <p>More content goes here...</p>
 
+    <script>
+    // Adjust the iframe height to fit the PDF content
+    function adjustIframeHeight() {
+      var iframe = document.getElementById('pdfFrame');
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
 
-  
-
-  <p>More content goes here...</p>
+    // Event listener to adjust height once the content is loaded
+    document.getElementById('pdfFrame').addEventListener('load', function() {
+      adjustIframeHeight();
+    });
+  </script>
 </body>
 </html>
