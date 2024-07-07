@@ -9,7 +9,7 @@
             background-color: black;
             color: green;
             font-family: Arial, sans-serif;
-            font-size: 36px;
+            font-size: 24px;
         }
         h1, h2 {
             text-align: center;
@@ -28,43 +28,23 @@
         .subchapter {
             margin-bottom: 50px;
         }
-        .text-boxes {
+        .text-boxes, .bullet-points {
             display: flex;
             justify-content: space-around;
             margin: 20px 0;
         }
-        .text-box {
+        .text-box, .box {
             width: 30%;
             padding: 10px;
             border: 1px solid green;
             background-color: black;
             color: green;
             font-size: 36px;
-            white-space: pre-wrap; /* To preserve whitespace and new lines */
-            height: 400px; /* Set a fixed height for all boxes */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            white-space: pre-wrap;
+            box-sizing: border-box;
         }
-        .text-box ul {
-            padding-left: 40px; /* Additional margin on the left side of the bullets */
-            text-align: left;
-        }
-        .bullet-points {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .bullet-points .box {
-            width: 30%;
-            padding: 10px;
-            border: 1px solid green;
-            background-color: black;
-            color: green;
-            font-size: 36px;
-            height: 400px; /* Set a fixed height for all boxes */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        }
-        .bullet-points .box ul {
-            padding-left: 40px; /* Additional margin on the left side of the bullets */
+        .text-box ul, .box ul {
+            padding-left: 40px;
             text-align: left;
         }
         .images {
