@@ -42,7 +42,7 @@
             font-size: 36px;
             white-space: pre-wrap;
             box-sizing: border-box;
-            height: auto;
+            line-height: 1.2; /* Reduce the space between lines */
         }
         .text-box ul, .box ul {
             padding-left: 40px;
@@ -64,6 +64,12 @@
             width: 100%;
             border: 1px solid green;
             margin: 5px 0;
+            height: 400px; /* Make images the same height as text boxes */
+        }
+        .image-caption {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -76,7 +82,7 @@
         <h2>Leberzysten</h2>
         <div class="text-boxes">
             <div class="text-box">
-                <div style="text-align: center; font-weight: bold;">Charakteristika</div>
+                <div style="text-align: center; font-weight: bold;">Charakteristika/Epidemiologie</div>
                 <ul>
                     <li>Einzelne oder mehrere kongenitale, mit Flüssigkeit gefüllte und mit Epithel ausgekleidete Raumforderungen im Leberparenchym.</li>
                     <li>Pathogenetisch handelt es sich um eine embryonale Entwicklungsstörung kleiner interlobärer Gallengänge. Durch Sekretion des Gallenepithels kommt es zur allmählichen Vergrößerung der Zyste.</li>
@@ -84,7 +90,7 @@
                     <li>scharfe Abgrenzung vom Parenchym</li>
                     <li>Die dünne Wand nimmt kein Kontrastmittel auf</li>
                 </ul>
-                    <p>Epidemiologie</p>
+                <p>Epidemiologie</p>
                 <ul>
                     <li>in höherem Alter zunehmende Inzidenz</li>
                     <li>Frauen sind etwa 5-mal häufiger betroffen als Männer.</li>
@@ -138,21 +144,31 @@
         <div class="images-row">
             <div class="images-column">
                 <img src="image1.jpg" alt="CT Image 1">
+                <div class="image-caption">CT Image 1 description</div>
                 <img src="image2.jpg" alt="CT Image 2">
+                <div class="image-caption">CT Image 2 description</div>
                 <img src="image3.jpg" alt="CT Image 3">
+                <div class="image-caption">CT Image 3 description</div>
             </div>
             <div class="images-column">
                 <img src="image4.jpg" alt="MRT Image 1">
+                <div class="image-caption">MRT Image 1 description</div>
                 <img src="image5.jpg" alt="MRT Image 2">
+                <div class="image-caption">MRT Image 2 description</div>
                 <img src="image6.jpg" alt="MRT Image 3">
+                <div class="image-caption">MRT Image 3 description</div>
             </div>
             <div class="images-column">
                 <img src="image7.jpg" alt="SONO Image 1">
+                <div class="image-caption">SONO Image 1 description</div>
                 <img src="image8.jpg" alt="SONO Image 2">
+                <div class="image-caption">SONO Image 2 description</div>
                 <img src="image9.jpg" alt="SONO Image 3">
+                <div class="image-caption">SONO Image 3 description</div>
             </div>
         </div>
     </div>
     <!-- Add more chapters as needed -->
 </body>
 </html>
+
