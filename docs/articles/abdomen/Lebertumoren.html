@@ -9,7 +9,7 @@
             background-color: black;
             color: green;
             font-family: Arial, sans-serif;
-            font-size: 36px;
+            font-size: 24px;
         }
         h1, h2 {
             text-align: center;
@@ -39,8 +39,10 @@
             border: 1px solid green;
             background-color: black;
             color: green;
-            font-size: 36px;
+            font-size: 24px;
             white-space: pre-wrap; /* To preserve whitespace and new lines */
+            height: 400px; /* Set a fixed height for all boxes */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         .text-box ul {
             padding-left: 40px; /* Additional margin on the left side of the bullets */
@@ -57,7 +59,9 @@
             border: 1px solid green;
             background-color: black;
             color: green;
-            font-size: 36px;
+            font-size: 24px;
+            height: 400px; /* Set a fixed height for all boxes */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         .bullet-points .box ul {
             padding-left: 40px; /* Additional margin on the left side of the bullets */
@@ -109,6 +113,11 @@
                 <p>Zur Therapie dieser schmerzhaften Zysten wird nach kompletter Entleerung ein Sklerosanz (Ethoxysklerol oder 98%iger Alkohol) in das kollabierte Zystenlumen gespritzt und nach einiger Zeit wieder abgesaugt.</p>
             </div>
         </div>
+        <div class="images">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
         <div class="bullet-points">
             <div class="box">
                 <div style="text-align: center; font-weight: bold;">CT</div>
@@ -118,11 +127,6 @@
                     <li>gelegentlich diskrete Verkalkungen in der Zystenwand</li>
                     <li>nach Kontrastmittelgabe keine Anreicherung in der Wand oder der Umgebung der Zyste (außer infizierte Zysten – selten)</li>
                 </ul>
-                <div class="images">
-                    <img src="image1.jpg" alt="Image 1">
-                    <img src="image2.jpg" alt="Image 2">
-                    <img src="image3.jpg" alt="Image 3">
-                </div>
             </div>
             <div class="box">
                 <div style="text-align: center; font-weight: bold;">MRT</div>
@@ -132,23 +136,23 @@
                     <li>verdickte Wand mit Kontrastmittelaufnahme bei infizierten Zysten</li>
                     <li>Selten sind die Zysten eingeblutet oder enthalten Proteine, sodass sich eine Signalanhebung im T1W und ein Signalabfall im T2W findet, mitunter Sedimentationen.</li>
                 </ul>
-                <div class="images">
-                    <img src="image4.jpg" alt="Image 4">
-                    <img src="image5.jpg" alt="Image 5">
-                    <img src="image6.jpg" alt="Image 6">
-                </div>
             </div>
             <div class="box">
                 <div style="text-align: center; font-weight: bold;">SONO</div>
                 <ul>
                     <li>echofreie kugelige Raumforderungen mit deutlicher dorsaler Schallverstärkung</li>
                 </ul>
-                <div class="images">
-                    <img src="image7.jpg" alt="Image 7">
-                    <img src="image8.jpg" alt="Image 8">
-                    <img src="image9.jpg" alt="Image 9">
-                </div>
             </div>
+        </div>
+        <div class="images">
+            <img src="image4.jpg" alt="Image 4">
+            <img src="image5.jpg" alt="Image 5">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+        <div class="images">
+            <img src="image7.jpg" alt="Image 7">
+            <img src="image8.jpg" alt="Image 8">
+            <img src="image9.jpg" alt="Image 9">
         </div>
     </div>
     <!-- Add more chapters as needed -->
