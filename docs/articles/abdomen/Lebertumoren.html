@@ -52,7 +52,7 @@
         }
         .text-box p, .box p {
             margin-bottom: 0; /* Reduce the bottom margin for paragraphs */
-        }
+       }
         .images-row {
             display: flex;
             justify-content: space-around;
@@ -65,10 +65,11 @@
             width: 30%;
         }
         .images img {
-            width: 100%;
+            width: 100%; /* Ensure image width fills the container */
+            height: 400px; /* Uniform height for images */
             border: 1px solid green;
             margin: 5px 0;
-            height: 400px; /* Make images the same height as text boxes */
+            object-fit: cover; /* Maintain aspect ratio, crop if necessary */
         }
         .image-caption {
             text-align: center;
