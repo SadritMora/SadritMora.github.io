@@ -218,6 +218,10 @@
                 Kein Enhancement
             </label>
             <label>
+                <input type="checkbox" id="ringenhancement" name="features" value="ringenhancement">
+                Ringenhancement
+            </label>
+            <label>
                 <input type="checkbox" id="zentripetale_füllung" name="features" value="zentripetale_füllung">
                 Zentripetale Füllung
             </label>
@@ -248,20 +252,16 @@
                 Infiltrativ
             </label>
             <label>
-                <input type="checkbox" id="Verkalkungen_oft" name="features" value="Verkalkungen oft">
-                Verkalkungen oft
+                <input type="checkbox" id="verkalkungen" name="features" value="verkalkungen">
+                Verkalkungen ++
             </label>
             <label>
-                <input type="checkbox" id="Verkalkungen_selten" name="features" value="Verkalkungen selten">
-                Verkalkungen selten
+                <input type="checkbox" id="fett" name="features" value="fett">
+                Fett ++
             </label>
-            <label>
-                <input type="checkbox" id="Fett_oft" name="features" value="Fett_oft">
-                Fett oft
-            </label>
-            <label>
-                <input type="checkbox" id="Fett_selten" name="features" value="Fett_selten">
-                Fett selten
+             <label>
+                <input type="checkbox" id="nekrose" name="features" value="nekrose">
+               Nekrotische Areale
             </label>
             <label>
                 <input type="checkbox" id="zentrale_narbe" name="features" value="zentrale_narbe">
@@ -274,6 +274,10 @@
             <label>
                 <input type="checkbox" id="kapsel" name="features" value="kapsel">
                 Kapsel
+            </label>
+            <label>
+                <input type="checkbox" id="zystisch" name="features" value="zystisch">
+                Zystisch
             </label>
             <label>
                 <input type="checkbox" id="kontrastmittelaufnehmende_kapsel" name="features" value="kontrastmittelaufnehmende_kapsel">
@@ -331,26 +335,26 @@
 
         <!-- Results Box -->
         <div class="results-box" id="chapterLinks">
-            <a href="#chapter0" data-features="echoreich echoarm kein_Enhancement T1_hyperintens T2_hyperintens fett_oft">Fettverteilungsstörungen</a>
+            <a href="#chapter0" data-features="echoreich echoarm kein_Enhancement T1_hyperintens T2_hyperintens fett">Fettverteilungsstörungen</a>
             <a href="#chapter1" data-features="echofrei kein_Enhanceement T2_hyperintens T1_hypointens solitär multipel gut_abgrenzbar kapsel">Leberzysten</a>
-            <a href="#chapter2" data-features="solitär kein_Enhancement T1_hyperintens multipel gut_abgrenzbar kapsel">Leberabszess</a>
-            <a href="#chapter3" data-features="T1_hypointens kein_Enhancement T2_hyperintens gut_abgrenzbar solitär multipel kapsel">Echinococcuszyste</a>
-            <a href="#chapter4" data-features="kein_Enhancement T1_hyperintens T2_hyperintens kapsel">Hämangiom</a>
-            <a href="#chapter5" data-features="hypervaskularisiert Verkalkungen_oft">Leberadenom</a>
-            <a href="#chapter6" data-features="hypovaskularisiert infiltrativ">Fokal noduläre Hyperplasie (FNH)</a>
-            <a href="#chapter7" data-features="heterogenes_Enhancement solitär">Regeneratknoten</a>
-            <a href="#chapter8" data-features="homogenes_Enhancement gut_abgrenzbar">Biliäres Hamartom</a>
-            <a href="#chapter9" data-features="Fett_oft Kapsel">Hepatoblastom</a>
-            <a href="#chapter10" data-features="echoarm Verkalkungen_selten">Angiomyolipom</a>
-            <a href="#chapter11" data-features="hypervaskularisiert Verkalkungen_oft">HCC</a>
-            <a href="#chapter12" data-features="T1_hyperintens leberkapselretraktion">Fibrolamelläres Karzinom</a>
-            <a href="#chapter13" data-features="T2_hypointens konrastmittelaufnehmende_kapsel">Cholangiokarzinom</a>
-            <a href="#chapter14" data-features="T2_hyperintens hypovaskularisiert">Lebermetastasen</a>
+            <a href="#chapter2" data-features="echoarm echofrei zystisch kontrastmittelaufnehmende_kapsel kapsel">Leberabszess</a>
+            <a href="#chapter3" data-features="echofrei zystisch">Echinococcuszyste</a>
+            <a href="#chapter4" data-features="hypervaskularisiert zentripetale_füllung">Hämangiom</a>
+            <a href="#chapter5" data-features="ecoreich">Leberadenom</a>
+            <a href="#chapter6" data-features="hypervaskularisiert">Fokal noduläre Hyperplasie (FNH)</a>
+            <a href="#chapter7" data-features="echoreich">Regeneratknoten</a>
+            <a href="#chapter8" data-features="multipel">Biliäres Hamartom</a>
+            <a href="#chapter9" data-features="heterogenes_Enhancement">Hepatoblastom</a>
+            <a href="#chapter10" data-features="hypervaskularisiert">Angiomyolipom</a>
+            <a href="#chapter11" data-features="hypervaskularisiert wash-out">HCC</a>
+            <a href="#chapter12" data-features="echoreich">Fibrolamelläres Karzinom</a>
+            <a href="#chapter13" data-features="Leberkapselretraktion">Cholangiokarzinom</a>
+            <a href="#chapter14" data-features="ringenhancement">Lebermetastasen</a>
             <a href="#chapter15" data-features="echoarm infiltrativ">Leberlymphom</a>
-            <a href="#chapter16" data-features="hypervascular solitär">Biliäres Zystadenokarzinom</a>
-            <a href="#chapter17" data-features="hypovaskularisiert calcifications">Angiosarkom</a>
-            <a href="#chapter18" data-features="Fett_oft">Hepatoblastom</a>
-            <a href="#chapter19" data-features="hypovaskularisiert infiltrativ">Embryonalsarkom</a>
+            <a href="#chapter16" data-features="zystisch">Biliäres Zystadenokarzinom</a>
+            <a href="#chapter17" data-features="hypervaskularisiert">Angiosarkom</a>
+            <a href="#chapter18" data-features="heterogenes_Enhancement">Hepatoblastom</a>
+            <a href="#chapter19" data-features="echoreich">Embryonalsarkom</a>
             <!-- Add more chapters with data-features attributes -->
         </div>
     </div>
