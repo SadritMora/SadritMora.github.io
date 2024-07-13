@@ -194,43 +194,46 @@
         <a href="#chapter19">Embryonalsarkom</a>
     </div>
 
-   <!-- Navigation Tool -->
-    <div class="filter-nav">
-        <label>
-            <input type="checkbox" id="hypervaskularisiert" name="features" value="hypervaskularisiert">
-            Hypervaskularisierter Tumor
-        </label>
-        <label>
-            <input type="checkbox" id="hypovaskularisiert" name="features" value="hypovaskularisiert">
-            Hypovaskularisierter Tumor
-        </label>
-        <label>
-            <input type="checkbox" id="nicht_vaskularisiert" name="features" value="nicht vaskularisiert">
-            Nicht vaskularisierter Tumor
-        </label>
-        <label>
-            <input type="checkbox" id="Verkalkungen_oft" name="features" value="Verkalkungen oft">
-            Verkalkungen oft
-        </label>
-        <label>
-            <input type="checkbox" id="Verkalkungen_selten" name="features" value="Verkalkungen selten">
-            Verkalkungen selten
-        </label>
-        <!-- Add more checkboxes as needed -->
-        <button onclick="filterChapters()">Filter</button>
-        <label>
-            <input type="checkbox" id="clearFilters" onclick="clearAllFilters()">
-            Remove All Filters
-        </label>
-    </div>
+   <div class="container">
+        <!-- Filter Box -->
+        <div class="filter-box">
+            <label>
+                <input type="checkbox" id="hypervaskularisiert" name="features" value="hypervaskularisiert">
+                Hypervaskularisierter Tumor
+            </label>
+            <label>
+                <input type="checkbox" id="hypovaskularisiert" name="features" value="hypovaskularisiert">
+                Hypovaskularisierter Tumor
+            </label>
+            <label>
+                <input type="checkbox" id="nicht_vaskularisiert" name="features" value="nicht vaskularisiert">
+                Nicht vaskularisierter Tumor
+            </label>
+            <label>
+                <input type="checkbox" id="Verkalkungen_oft" name="features" value="Verkalkungen oft">
+                Verkalkungen oft
+            </label>
+            <label>
+                <input type="checkbox" id="Verkalkungen_selten" name="features" value="Verkalkungen selten">
+                Verkalkungen selten
+            </label>
+            <!-- Add more checkboxes as needed -->
+            <button onclick="filterChapters()">Filter</button>
+            <label>
+                <input type="checkbox" id="clearFilters" onclick="clearAllFilters()">
+                Remove All Filters
+            </label>
+        </div>
 
-    <div id="chapterLinks" class="nav">
-        <a href="#chapter0" data-features="nicht vaskularisiert">Fettverteilungsstörungen</a>
-        <a href="#chapter1" data-features="calcifications">Leberzysten</a>
-        <a href="#chapter2" data-features="hypervascular">Leberabszess</a>
-        <a href="#chapter3" data-features="calcifications">Echinococcuszyste</a>
-        <a href="#chapter4" data-features="hypervascular calcifications">Hämangiom</a>
-        <!-- Add more chapters with data-features attributes -->
+        <!-- Results Box -->
+        <div class="results-box" id="chapterLinks">
+            <a href="#chapter0" data-features="nicht vaskularisiert">Fettverteilungsstörungen</a>
+            <a href="#chapter1" data-features="calcifications">Leberzysten</a>
+            <a href="#chapter2" data-features="hypervascular">Leberabszess</a>
+            <a href="#chapter3" data-features="calcifications">Echinococcuszyste</a>
+            <a href="#chapter4" data-features="hypervascular calcifications">Hämangiom</a>
+            <!-- Add more chapters with data-features attributes -->
+        </div>
     </div>
 
     <!-- JavaScript for Filtering -->
@@ -244,9 +247,11 @@
                 const features = link.getAttribute('data-features').split(' ');
                 const hasAllFeatures = selectedFeatures.every(feature => features.includes(feature));
                 if (hasAllFeatures) {
-                    link.style.display = 'inline';
+                    link.classList.remove('hidden');
+                    link.classList.add('visible');
                 } else {
-                    link.style.display = 'none';
+                    link.classList.remove('visible');
+                    link.classList.add('hidden');
                 }
             });
         }
