@@ -219,19 +219,31 @@
                 <input type="checkbox" id="kein_Enhancement" name="features" value="kein_Enhancement">
                  Kein Enhancement
             </label>
-
+            <label>
+                <input type="checkbox" id="zentripetale_füllung" name="features" value="zentripetale_füllung">
+                 Zentripetale Füllung
+            </label>
+            <label>
+                <input type="checkbox" id="wash-out" name="features" value="wash-out">
+                 Wash-out
+            </label>
+            
             <p>Merkmale</p>
             <label>
                 <input type="checkbox" id="solitär" name="features" value="solitär">
                  Solitär
             </label>
              <label>
-                <input type="checkbox" id="mulipel" name="features" value="mulipel">
-                 Mulipel
+                <input type="checkbox" id="multipel" name="features" value="multipel">
+                 Multipel
             </label>
               <label>
                 <input type="checkbox" id="gut_abgrenzbar" name="features" value="gut_abgrenzbar">
                  Gut abgrenzbar
+            </label>
+             <label>
+                <input type="checkbox" id="unscharf_abgrenzbar" name="features" value="unscharf_abgrenzbar">
+                 Unscharf abgrenzbar
             </label>
             <label>
                 <input type="checkbox" id="infiltrativ" name="features" value="infiltrativ">
@@ -252,6 +264,10 @@
              <label>
                 <input type="checkbox" id="Fett_selten" name="features" value="Fett_selten">
                 Fett selten
+            </label>
+            <label>
+                <input type="checkbox" id="zentrale_narbe" name="features" value="zentrale_narbe">
+                 Zentrale Narbe
             </label>
             <label>
                 <input type="checkbox" id="gefäßinvasion" name="features" value="gefäßinvasion">
@@ -286,6 +302,14 @@
                 <input type="checkbox" id="T2_hypointens" name="features" value="T2_hypointens">
                  T2 hypointens
             </label>
+            <label>
+                <input type="checkbox" id="primovist" name="features" value="primovist">
+                 Enhancement + mit hepatospezifischem Kontrastmittel 
+            </label>
+            <label>
+                <input type="checkbox" id="primovist_neg" name="features" value="primovist_neg">
+                 Enhancement - mit hepatospezifischem Kontrastmittel 
+            </label>
             <p>SONO</p>
             <label>
                 <input type="checkbox" id="echoreich" name="features" value="echoreich">
@@ -294,6 +318,10 @@
             <label>
                 <input type="checkbox" id="echoarm" name="features" value="echoarm">
                  Echoarm
+            </label>
+             <label>
+                <input type="checkbox" id="echofrei" name="features" value="echofrei">
+                 Echofrei
             </label>
             <!-- Add more checkboxes as needed -->
             <button onclick="filterChapters()">Filter</button>
@@ -305,11 +333,11 @@
 
         <!-- Results Box -->
         <div class="results-box" id="chapterLinks">
-            <a href="#chapter0" data-features="echoreich echoarm kein_Enhancement">Fettverteilungsstörungen</a>
-            <a href="#chapter1" data-features="calcifications">Leberzysten</a>
-            <a href="#chapter2" data-features="hypervascular">Leberabszess</a>
-            <a href="#chapter3" data-features="calcifications">Echinococcuszyste</a>
-            <a href="#chapter4" data-features="hypervascular calcifications">Hämangiom</a>
+            <a href="#chapter0" data-features="echoreich echoarm kein_Enhancement T1_hyperintens T2_hyperintens fett_oft">Fettverteilungsstörungen</a>
+            <a href="#chapter1" data-features="echofrei kein_Enhanceement T2_hyperintens T1_hypointens solitär multiple gut_abgrenzbar kapsel">Leberzysten</a>
+            <a href="#chapter2" data-features="">Leberabszess</a>
+            <a href="#chapter3" data-features="">Echinococcuszyste</a>
+            <a href="#chapter4" data-features="">Hämangiom</a>
             <a href="#chapter5">Leberadenom</a>
             <a href="#chapter6">Fokal noduläre Hyperplasie (FNH)</a>
             <a href="#chapter7">Regeneratknoten</a>
