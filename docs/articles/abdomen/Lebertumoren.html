@@ -212,6 +212,10 @@
         <div class="filter-box">
             <div class="filter-columns">
                 <div class="filter-column">
+                     <label>
+                        <input type="checkbox" id="clearFilters" onclick="clearAllFilters()">
+                        REMOVE ALL FILTERS
+                    </label>
                     <p>KM</p>
                     <label>
                         <input type="checkbox" id="hypervaskularisiert" name="features" value="hypervaskularisiert" onchange="filterChapters()">
@@ -248,6 +252,14 @@
                 </div>
                 <div class="filter-column">
                     <p>Merkmale</p>
+                    <label>
+                        <input type="checkbox" id="hyperdens" name="features" value="hyperdens" onchange="filterChapters()">
+                        Hyperdens
+                    </label>
+                    <label>
+                        <input type="checkbox" id="hypodens" name="features" value="hypodens" onchange="filterChapters()">
+                        Hypodens
+                    </label>
                     <label>
                         <input type="checkbox" id="solitär" name="features" value="solitär" onchange="filterChapters()">
                         Solitär
@@ -301,11 +313,11 @@
                     </label>
                     <label>
                         <input type="checkbox" id="primovist" name="features" value="primovist" onchange="filterChapters()">
-                        Enhancement + mit hepatospezifischem Kontrastmittel 
+                        Anreicherung mit hepatospezifischem Kontrastmittel 
                     </label>
                     <label>
                         <input type="checkbox" id="primovist_neg" name="features" value="primovist_neg" onchange="filterChapters()">
-                        Enhancement - mit hepatospezifischem Kontrastmittel 
+                        Keine Anreicherung mit hepatospezifischem Kontrastmittel 
                     </label>
                 </div>
                 <div class="filter-column">
@@ -322,15 +334,7 @@
                         <input type="checkbox" id="echofrei" name="features" value="echofrei" onchange="filterChapters()">
                         Echofrei
                     </label>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <label>
-                        <input type="checkbox" id="clearFilters" onclick="clearAllFilters()">
-                        REMOVE ALL FILTERS
-                    </label>
+                    
                 </div>
             </div>
         </div>
