@@ -35,17 +35,17 @@
             margin: 20px;
         }
         .filter-box, .results-box {
-            width: 45%;
+            width: 30%;
             padding: 20px;
             border: 1px solid green;
             background-color: black;
             color: green;
-            font-size: 24px;
+            font-size: 36px;
             margin: 10px;
             box-sizing: border-box;
         }
         .filter-box label {
-            font-size: 24px;
+            font-size: 36px;
             display: block;
             margin-bottom: 10px;
         }
@@ -54,7 +54,7 @@
             transform: scale(1.5);
         }
         .filter-box button {
-            font-size: 24px;
+            font-size: 36px;
             margin-top: 20px;
             padding: 10px 20px;
             cursor: pointer;
@@ -64,7 +64,7 @@
             text-decoration: none;
             display: block;
             margin: 5px 0;
-            font-size: 24px;
+            font-size: 36px;
         }
         .results-box a.hidden {
             display: none;
@@ -194,6 +194,7 @@
         <a href="#chapter19">Embryonalsarkom</a>
     </div>
 
+    <h3>Nav Tool: Filtern</h3>
    <div class="container">
         <!-- Filter Box -->
         <div class="filter-box">
@@ -216,6 +217,14 @@
             <label>
                 <input type="checkbox" id="Verkalkungen_selten" name="features" value="Verkalkungen selten">
                 Verkalkungen selten
+            </label>
+            <label>
+                <input type="checkbox" id="Fett_oft" name="features" value="Fett_oft">
+                Fett oft
+            </label>
+             <label>
+                <input type="checkbox" id="Fett_selten" name="features" value="Fett_selten">
+                Fett selten
             </label>
             <!-- Add more checkboxes as needed -->
             <button onclick="filterChapters()">Filter</button>
