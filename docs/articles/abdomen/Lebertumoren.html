@@ -29,6 +29,28 @@
             margin: 0 10px;
             font-size: 30px;
         }
+        .filter-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .filter-nav label {
+            font-size: 36px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .filter-nav input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.5);
+        }
+        .filter-nav button {
+            font-size: 36px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
         .subchapter {
             margin-bottom: 50px;
         }
@@ -151,7 +173,7 @@
         <a href="#chapter19">Embryonalsarkom</a>
     </div>
 
-      <!-- Navigation Tool -->
+   <!-- Navigation Tool -->
     <div class="filter-nav">
         <label>
             <input type="checkbox" id="hypervaskularisiert" name="features" value="hypervaskularisiert">
@@ -162,19 +184,23 @@
             Hypovaskularisierter Tumor
         </label>
         <label>
-            <input type="checkbox" id="nicht vaskularisiert" name="features" value="nicht vaskularisiert">
+            <input type="checkbox" id="nicht_vaskularisiert" name="features" value="nicht vaskularisiert">
             Nicht vaskularisierter Tumor
         </label>
         <label>
-            <input type="checkbox" id="Verkalkungen oft" name="features" value="Verkalkungen oft">
+            <input type="checkbox" id="Verkalkungen_oft" name="features" value="Verkalkungen oft">
             Verkalkungen oft
         </label>
         <label>
-            <input type="checkbox" id="Verkalkungen selten" name="features" value="Verkalkungen selten">
+            <input type="checkbox" id="Verkalkungen_selten" name="features" value="Verkalkungen selten">
             Verkalkungen selten
         </label>
         <!-- Add more checkboxes as needed -->
         <button onclick="filterChapters()">Filter</button>
+        <label>
+            <input type="checkbox" id="clearFilters" onclick="clearAllFilters()">
+            Remove All Filters
+        </label>
     </div>
 
     <div id="chapterLinks" class="nav">
@@ -202,6 +228,12 @@
                     link.style.display = 'none';
                 }
             });
+        }
+
+        function clearAllFilters() {
+            const checkboxes = document.querySelectorAll('input[name="features"]');
+            checkboxes.forEach(cb => cb.checked = false);
+            filterChapters();
         }
     </script>
 
