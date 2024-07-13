@@ -150,6 +150,52 @@
         <a href="#chapter18">Hepatoblastom</a>
         <a href="#chapter19">Embryonalsarkom</a>
     </div>
+
+        <!-- Navigation Tool -->
+    <div class="nav">
+        <input type="checkbox" id="hypervaskularisiert" name="features" value="hypervaskularisiert">
+        <label for="hypervaskularisiert">Hypervaskularisierter Tumor</label>
+        <input type="checkbox" id="hypovaskularisiert" name="features" value="hypovaskularisiert">
+        <label for="hypovaskularisiert">Hypovaskularisierter Tumor</label>
+        <input type="checkbox" id="nicht vaskularisiert" name="features" value="nicht vaskularisiert">
+        <label for="nicht vaskularisiert">Nicht vaskularisierter Tumor</label>
+        <input type="checkbox" id="Verkalkungen oft" name="features" value="Verkalkungen oft">
+        <label for="Verkalkungen oft">Verkalkungen oft</label>
+        <input type="checkbox" id="Verkalkungen selten" name="features" value="Verkalkungen selten">
+        <label for="Verkalkungen selten">Verkalkungen selten</label>
+        <!-- Add more checkboxes as needed -->
+        <button onclick="filterChapters()">Filter</button>
+    </div>
+
+    <div id="chapterLinks" class="nav">
+        <a href="#chapter0" data-features="nicht vaskularisiert">Fettverteilungsstörungen</a>
+        <a href="#chapter1" data-features="calcifications">Leberzysten</a>
+        <a href="#chapter2" data-features="hypervascular">Leberabszess</a>
+        <a href="#chapter3" data-features="calcifications">Echinococcuszyste</a>
+        <a href="#chapter4" data-features="hypervascular calcifications">Hämangiom</a>
+        <!-- Add more chapters with data-features attributes -->
+    </div>
+
+    <!-- JavaScript for Filtering -->
+    <script>
+        function filterChapters() {
+            const checkboxes = document.querySelectorAll('input[name="features"]:checked');
+            const selectedFeatures = Array.from(checkboxes).map(cb => cb.value);
+            const chapterLinks = document.querySelectorAll('#chapterLinks a');
+
+            chapterLinks.forEach(link => {
+                const features = link.getAttribute('data-features').split(' ');
+                const hasAllFeatures = selectedFeatures.every(feature => features.includes(feature));
+                if (hasAllFeatures) {
+                    link.style.display = 'inline';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    
     <div id="chapter0" class="subchapter">
     <h2>Fokale Fettverteilungsstörungen</h2>
 
