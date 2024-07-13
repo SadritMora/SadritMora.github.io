@@ -215,6 +215,10 @@
                 <input type="checkbox" id="homogenes_Enhancement" name="features" value="homogenes_Enhancement">
                  Homogenes Enhancement
             </label>
+            <label>
+                <input type="checkbox" id="kein_Enhancement" name="features" value="kein_Enhancement">
+                 Kein Enhancement
+            </label>
 
             <p>Merkmale</p>
             <label>
@@ -289,7 +293,7 @@
             </label>
             <label>
                 <input type="checkbox" id="echoarm" name="features" value="echoarm">
-                 Echoreich
+                 Echoarm
             </label>
             <!-- Add more checkboxes as needed -->
             <button onclick="filterChapters()">Filter</button>
@@ -301,11 +305,27 @@
 
         <!-- Results Box -->
         <div class="results-box" id="chapterLinks">
-            <a href="#chapter0" data-features="nicht vaskularisiert">Fettverteilungsstörungen</a>
+            <a href="#chapter0" data-features="echoreich echoarm kein_Enhancement">Fettverteilungsstörungen</a>
             <a href="#chapter1" data-features="calcifications">Leberzysten</a>
             <a href="#chapter2" data-features="hypervascular">Leberabszess</a>
             <a href="#chapter3" data-features="calcifications">Echinococcuszyste</a>
             <a href="#chapter4" data-features="hypervascular calcifications">Hämangiom</a>
+            <a href="#chapter5">Leberadenom</a>
+            <a href="#chapter6">Fokal noduläre Hyperplasie (FNH)</a>
+            <a href="#chapter7">Regeneratknoten</a>
+            <a href="#chapter8">Biliäres Hamartom</a>
+            <a href="#chapter9">Hepatoblastom</a>
+            <a href="#chapter10">Angiomyolipom</a>
+            <a href="#chapter11">HCC</a>
+            <a href="#chapter12">Fibrolamelläres Karzinom</a>
+            <a href="#chapter13">Cholangiokarzinom</a>
+            <a href="#chapter14">Lebermetastasen</a>
+            <a href="#chapter15">Leberlymphom</a>
+            <a href="#chapter16">Biliäres Zystadenokarzinom</a>
+            <a href="#chapter17">Angiosarkom</a>
+            <a href="#chapter18">Hepatoblastom</a>
+            <a href="#chapter19">Embryonalsarkom</a>
+            
             <!-- Add more chapters with data-features attributes -->
         </div>
     </div>
