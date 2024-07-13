@@ -123,25 +123,24 @@
             margin-top: 5px;
             font-size: 24px;
         }
-            #backToTopBtn {
-        display: none; /* Hidden by default */
-        position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button 20px from the bottom */
-        right: 30px; /* Place the button 30px from the right */
-        z-index: 99; /* Make sure it does not overlap */
-        font-size: 18px; /* Increase font size */
-        border: none; /* Remove borders */
-        outline: none; /* Remove outline */
-        background-color: red; /* Set a background color */
-        color: white; /* Text color */
-        cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
+        #backToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button 20px from the bottom */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            font-size: 18px; /* Increase font size */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: red; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
         }
 
         #backToTopBtn:hover {
-        background-color: #555; /* Add a dark-grey background on hover */
-        }
+            background-color: #555; /* Add a dark-grey background on hover */
         }
         footer {
             background-color: black;
@@ -163,12 +162,11 @@
             font-size: 24px;
             margin: 5px 0;
         }
-
     </style>
 </head>
 <body>
     <h1>DD Lebertumoren</h1>
-        <div class="nav">
+    <div class="nav">
         <a href="#chapter0">Fettverteilungsstörungen</a>
         <a href="#chapter1">Leberzysten</a>
         <a href="#chapter2">Leberabszess</a>
@@ -195,7 +193,7 @@
     </div>
 
     <h3>Nav Tool: Filtern</h3>
-   <div class="container">
+    <div class="container">
         <!-- Filter Box -->
         <div class="filter-box">
             <p>KM</p>
@@ -207,47 +205,47 @@
                 <input type="checkbox" id="hypovaskularisiert" name="features" value="hypovaskularisiert">
                 Hypovaskularisiert
             </label>
-             <label>
+            <label>
                 <input type="checkbox" id="heterogenes_Enhancement" name="features" value="heterogenes_Enhancement">
                 Heterogenes Enhancement
             </label>
             <label>
                 <input type="checkbox" id="homogenes_Enhancement" name="features" value="homogenes_Enhancement">
-                 Homogenes Enhancement
+                Homogenes Enhancement
             </label>
             <label>
                 <input type="checkbox" id="kein_Enhancement" name="features" value="kein_Enhancement">
-                 Kein Enhancement
+                Kein Enhancement
             </label>
             <label>
                 <input type="checkbox" id="zentripetale_füllung" name="features" value="zentripetale_füllung">
-                 Zentripetale Füllung
+                Zentripetale Füllung
             </label>
             <label>
                 <input type="checkbox" id="wash-out" name="features" value="wash-out">
-                 Wash-out
+                Wash-out
             </label>
-            
+
             <p>Merkmale</p>
             <label>
                 <input type="checkbox" id="solitär" name="features" value="solitär">
-                 Solitär
+                Solitär
             </label>
-             <label>
+            <label>
                 <input type="checkbox" id="multipel" name="features" value="multipel">
-                 Multipel
+                Multipel
             </label>
-              <label>
+            <label>
                 <input type="checkbox" id="gut_abgrenzbar" name="features" value="gut_abgrenzbar">
-                 Gut abgrenzbar
+                Gut abgrenzbar
             </label>
-             <label>
+            <label>
                 <input type="checkbox" id="unscharf_abgrenzbar" name="features" value="unscharf_abgrenzbar">
-                 Unscharf abgrenzbar
+                Unscharf abgrenzbar
             </label>
             <label>
                 <input type="checkbox" id="infiltrativ" name="features" value="infiltrativ">
-                 Infiltrativ
+                Infiltrativ
             </label>
             <label>
                 <input type="checkbox" id="Verkalkungen_oft" name="features" value="Verkalkungen oft">
@@ -261,67 +259,67 @@
                 <input type="checkbox" id="Fett_oft" name="features" value="Fett_oft">
                 Fett oft
             </label>
-             <label>
+            <label>
                 <input type="checkbox" id="Fett_selten" name="features" value="Fett_selten">
                 Fett selten
             </label>
             <label>
                 <input type="checkbox" id="zentrale_narbe" name="features" value="zentrale_narbe">
-                 Zentrale Narbe
+                Zentrale Narbe
             </label>
             <label>
                 <input type="checkbox" id="gefäßinvasion" name="features" value="gefäßinvasion">
-                 Gefäßinvasion
+                Gefäßinvasion
             </label>
             <label>
                 <input type="checkbox" id="kapsel" name="features" value="kapsel">
-                 Kapsel
+                Kapsel
             </label>
             <label>
                 <input type="checkbox" id="kontrastmittelaufnehmende_kapsel" name="features" value="kontrastmittelaufnehmende_kapsel">
-                 Kontrastmittelaufnehmende Kapsel
+                Kontrastmittelaufnehmende Kapsel
             </label>
             <label>
                 <input type="checkbox" id="leberkapselretraktion" name="features" value="leberkapselretraktion">
-                 Leberkapselretraktion
+                Leberkapselretraktion
             </label>
             <p>MRT</p>
             <label>
                 <input type="checkbox" id="T1_hyperintens" name="features" value="T1_hyperintens">
-                 T1 hyperintens
+                T1 hyperintens
             </label>
             <label>
                 <input type="checkbox" id="T1_hypointens" name="features" value="T1_hypointens">
-                 T1 hypointens
+                T1 hypointens
             </label>
             <label>
                 <input type="checkbox" id="T2_hyperintens" name="features" value="T2_hyperintens">
-                 T2 hyperintens
+                T2 hyperintens
             </label>
             <label>
                 <input type="checkbox" id="T2_hypointens" name="features" value="T2_hypointens">
-                 T2 hypointens
+                T2 hypointens
             </label>
             <label>
                 <input type="checkbox" id="primovist" name="features" value="primovist">
-                 Enhancement + mit hepatospezifischem Kontrastmittel 
+                Enhancement + mit hepatospezifischem Kontrastmittel 
             </label>
             <label>
                 <input type="checkbox" id="primovist_neg" name="features" value="primovist_neg">
-                 Enhancement - mit hepatospezifischem Kontrastmittel 
+                Enhancement - mit hepatospezifischem Kontrastmittel 
             </label>
             <p>SONO</p>
             <label>
                 <input type="checkbox" id="echoreich" name="features" value="echoreich">
-                 Echoreich
+                Echoreich
             </label>
             <label>
                 <input type="checkbox" id="echoarm" name="features" value="echoarm">
-                 Echoarm
+                Echoarm
             </label>
-             <label>
+            <label>
                 <input type="checkbox" id="echofrei" name="features" value="echofrei">
-                 Echofrei
+                Echofrei
             </label>
             <!-- Add more checkboxes as needed -->
             <button onclick="filterChapters()">Filter</button>
@@ -334,26 +332,25 @@
         <!-- Results Box -->
         <div class="results-box" id="chapterLinks">
             <a href="#chapter0" data-features="echoreich echoarm kein_Enhancement T1_hyperintens T2_hyperintens fett_oft">Fettverteilungsstörungen</a>
-            <a href="#chapter1" data-features="echofrei kein_Enhanceement T2_hyperintens T1_hypointens solitär multiple gut_abgrenzbar kapsel">Leberzysten</a>
-            <a href="#chapter2" data-features="">Leberabszess</a>
-            <a href="#chapter3" data-features="">Echinococcuszyste</a>
-            <a href="#chapter4" data-features="">Hämangiom</a>
-            <a href="#chapter5">Leberadenom</a>
-            <a href="#chapter6">Fokal noduläre Hyperplasie (FNH)</a>
-            <a href="#chapter7">Regeneratknoten</a>
-            <a href="#chapter8">Biliäres Hamartom</a>
-            <a href="#chapter9">Hepatoblastom</a>
-            <a href="#chapter10">Angiomyolipom</a>
-            <a href="#chapter11">HCC</a>
-            <a href="#chapter12">Fibrolamelläres Karzinom</a>
-            <a href="#chapter13">Cholangiokarzinom</a>
-            <a href="#chapter14">Lebermetastasen</a>
-            <a href="#chapter15">Leberlymphom</a>
-            <a href="#chapter16">Biliäres Zystadenokarzinom</a>
-            <a href="#chapter17">Angiosarkom</a>
-            <a href="#chapter18">Hepatoblastom</a>
-            <a href="#chapter19">Embryonalsarkom</a>
-            
+            <a href="#chapter1" data-features="echofrei kein_Enhanceement T2_hyperintens T1_hypointens solitär multipel gut_abgrenzbar kapsel">Leberzysten</a>
+            <a href="#chapter2" data-features="solitär kein_Enhancement T1_hyperintens multipel gut_abgrenzbar kapsel">Leberabszess</a>
+            <a href="#chapter3" data-features="T1_hypointens kein_Enhancement T2_hyperintens gut_abgrenzbar solitär multipel kapsel">Echinococcuszyste</a>
+            <a href="#chapter4" data-features="kein_Enhancement T1_hyperintens T2_hyperintens kapsel">Hämangiom</a>
+            <a href="#chapter5" data-features="hypervaskularisiert Verkalkungen_oft">Leberadenom</a>
+            <a href="#chapter6" data-features="hypovaskularisiert infiltrativ">Fokal noduläre Hyperplasie (FNH)</a>
+            <a href="#chapter7" data-features="heterogenes_Enhancement solitär">Regeneratknoten</a>
+            <a href="#chapter8" data-features="homogenes_Enhancement gut_abgrenzbar">Biliäres Hamartom</a>
+            <a href="#chapter9" data-features="Fett_oft Kapsel">Hepatoblastom</a>
+            <a href="#chapter10" data-features="echoarm Verkalkungen_selten">Angiomyolipom</a>
+            <a href="#chapter11" data-features="hypervaskularisiert Verkalkungen_oft">HCC</a>
+            <a href="#chapter12" data-features="T1_hyperintens leberkapselretraktion">Fibrolamelläres Karzinom</a>
+            <a href="#chapter13" data-features="T2_hypointens konrastmittelaufnehmende_kapsel">Cholangiokarzinom</a>
+            <a href="#chapter14" data-features="T2_hyperintens hypovaskularisiert">Lebermetastasen</a>
+            <a href="#chapter15" data-features="echoarm infiltrativ">Leberlymphom</a>
+            <a href="#chapter16" data-features="hypervascular solitär">Biliäres Zystadenokarzinom</a>
+            <a href="#chapter17" data-features="hypovaskularisiert calcifications">Angiosarkom</a>
+            <a href="#chapter18" data-features="Fett_oft">Hepatoblastom</a>
+            <a href="#chapter19" data-features="hypovaskularisiert infiltrativ">Embryonalsarkom</a>
             <!-- Add more chapters with data-features attributes -->
         </div>
     </div>
@@ -384,7 +381,6 @@
             filterChapters();
         }
     </script>
-
     
     <div id="chapter0" class="subchapter">
     <h2>Fokale Fettverteilungsstörungen</h2>
