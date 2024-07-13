@@ -198,17 +198,14 @@
    <div class="container">
         <!-- Filter Box -->
         <div class="filter-box">
+            <p>KM</p>
             <label>
                 <input type="checkbox" id="hypervaskularisiert" name="features" value="hypervaskularisiert">
-                Hypervaskularisierter Tumor
+                Hypervaskularisiert
             </label>
             <label>
                 <input type="checkbox" id="hypovaskularisiert" name="features" value="hypovaskularisiert">
-                Hypovaskularisierter Tumor
-            </label>
-            <label>
-                <input type="checkbox" id="nicht_vaskularisiert" name="features" value="nicht vaskularisiert">
-                Nicht vaskularisierter Tumor
+                Hypovaskularisiert
             </label>
              <label>
                 <input type="checkbox" id="heterogenes_Enhancement" name="features" value="heterogenes_Enhancement">
@@ -218,13 +215,23 @@
                 <input type="checkbox" id="homogenes_Enhancement" name="features" value="homogenes_Enhancement">
                  Homogenes Enhancement
             </label>
+
+            <p>Merkmale</p>
             <label>
-                <input type="checkbox" id="echoreich" name="features" value="echoreich">
-                 Echoreich
+                <input type="checkbox" id="solitär" name="features" value="solitär">
+                 Solitär
+            </label>
+             <label>
+                <input type="checkbox" id="mulipel" name="features" value="mulipel">
+                 Mulipel
+            </label>
+              <label>
+                <input type="checkbox" id="gut_abgrenzbar" name="features" value="gut_abgrenzbar">
+                 Gut abgrenzbar
             </label>
             <label>
-                <input type="checkbox" id="echoarm" name="features" value="echoarm">
-                 Echoreich
+                <input type="checkbox" id="infiltrativ" name="features" value="infiltrativ">
+                 Infiltrativ
             </label>
             <label>
                 <input type="checkbox" id="Verkalkungen_oft" name="features" value="Verkalkungen oft">
@@ -247,8 +254,16 @@
                  Gefäßinvasion
             </label>
             <label>
-                <input type="checkbox" id="kapselretraktion" name="features" value="kapselretraktion">
-                 Kapselretraktion
+                <input type="checkbox" id="kapsel" name="features" value="kapsel">
+                 Kapsel
+            </label>
+            <label>
+                <input type="checkbox" id="kontrastmittelaufnehmende_kapsel" name="features" value="kontrastmittelaufnehmende_kapsel">
+                 Kontrastmittelaufnehmende Kapsel
+            </label>
+            <label>
+                <input type="checkbox" id="leberkapselretraktion" name="features" value="leberkapselretraktion">
+                 Leberkapselretraktion
             </label>
             <p>MRT</p>
             <label>
@@ -266,6 +281,15 @@
             <label>
                 <input type="checkbox" id="T2_hypointens" name="features" value="T2_hypointens">
                  T2 hypointens
+            </label>
+            <p>SONO</p>
+            <label>
+                <input type="checkbox" id="echoreich" name="features" value="echoreich">
+                 Echoreich
+            </label>
+            <label>
+                <input type="checkbox" id="echoarm" name="features" value="echoarm">
+                 Echoreich
             </label>
             <!-- Add more checkboxes as needed -->
             <button onclick="filterChapters()">Filter</button>
